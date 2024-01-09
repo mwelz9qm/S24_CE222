@@ -2,7 +2,7 @@
 
 ## About This Repository
 
-Welcome to the GitHub repository for our CE222 class. This repository contains examples discussed in class, homework assignments, and their solutions. It's designed to be a comprehensive resource to help you succeed in this course.
+Welcome to the GitHub repository for our CE222 class. This repository contains examples discussed in class, homework assignments, and their solutions. It's designed to be a resource to help you succeed in this course.
 
 <!-- ## Course Information
 
@@ -51,9 +51,5 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 
-
-## Acknowledgements
-
-Special thanks to everyone contributing to making this course engaging and informative.
 
 
