@@ -14,8 +14,8 @@ public:
     myClass(int xval = 0, int pval = 0); //constructor
     myClass(const myClass &otherObject); //copy constructor
     ~ myClass(); //destructor
-   //void operator=(const myClass &otherObject); //operator overload
-   myClass& operator=(const myClass & otherObject);
+   void operator=(const myClass &otherObject); //operator overload
+   //myClass& operator=(const myClass & otherObject); <- a better operator= overload we'll learn soon
 
 };
 
@@ -31,10 +31,10 @@ int main()
     myObject.display();
     myObject2.display();
     cout << "The address of my object is " << &myObject2 << endl;
-    myObject3 = myObject2 = myObject;
+    //myObject3 = myObject2 = myObject; <- can only do this with the better operator= overload
     myObject.display();
     myObject2.display();
-    myObject3.display();
+    //myObject3.display();
 
     return 0;
 }
@@ -60,21 +60,21 @@ myClass::myClass(const myClass &otherObject)
     *p = *(otherObject.p);
 }
 
-// void myClass::operator=(const myClass &otherObject )
-// {
-//     x = otherObject.x;
-//     *p = *(otherObject.p);
-// }
-
-myClass& myClass::operator=(const myClass& otherObject) 
+void myClass::operator=(const myClass &otherObject )
 {
-    if (this != &otherObject)
-    {
-        x = otherObject.x;
-        *p = *(otherObject.p);
-    }
-    return *this;
+    x = otherObject.x;
+    *p = *(otherObject.p);
 }
+
+// myClass& myClass::operator=(const myClass& otherObject) 
+// {
+//     if (this != &otherObject)
+//     {
+//         x = otherObject.x;
+//         *p = *(otherObject.p);
+//     }
+//     return *this;
+// }
 
 
 
